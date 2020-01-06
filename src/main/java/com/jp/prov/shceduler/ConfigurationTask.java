@@ -29,7 +29,7 @@ public class ConfigurationTask extends BaseTask {
         ConfigDaoInterface mapper = session.getMapper(ConfigDaoInterface.class);
         System.out.println(mapper.getConfig().getStartDate());
         System.out.println("Checking Database settings");
-        
+        // update
        
 		/*
 		 * Validate if configuration changed
