@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.ConfigDaoInterface">
+	<resultMap id="result" type="model.Config">
+		<result property="id" column="ID" />
+		<result property="startDate" column="START_DATE" />
+		<result property="freq" column="FREQ" />
+		<result property="provFlag" column="PROV_FLAG" />
+	</resultMap>
+
+	<select id="getConfig" resultMap="result">
+		SELECT * FROM tbl_config_mst;
+	</select>
+</mapper>
